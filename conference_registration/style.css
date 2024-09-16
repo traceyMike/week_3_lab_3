@@ -1,0 +1,37 @@
+/* add font from googlefonts */
+body {
+    font-family: "Mingzat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+/* style the form lables */
+.form-label {
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+/* center the form */
+.container {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px; /* add space inside form container */
+    border: 1px solid seashell; /* create a nice border */
+    border-radius: 8px; /* rounded corners */
+    background-color: bisque;
+    box-shadow: 0 4px 8px black; /* add shadow */
+}
+
+.form-control, .form-select, textarea {
+    width: 100%; /* keep text area inside container */
+    box-sizing: border-box; /* padding and border */
+}
+
+textarea {
+    resize: vertical; /* only vertical resizing */
+    min-height: 150px; 
+    border: 1px solid seagreen;
+    border-radius: 4px; /* rounded corners */
+    background-color: azure;
+}

@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(162, 211, 161);
+    /* pick a font from googlefonts */
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* you can hover over color square for more precise color */
+
+/* all browsers know monospace, serif, san-serif fonts */
+/* typically pick more than one font so all browsers get font */
+
+.feedback {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 650;
+    font-style: normal;
+}
+
+.provide-feedback {
+    font-size: 48px;
+    font-family: 'Noto Serif', serif; /* apply noto serif font */
+    font-weight: 400; /* font weight */
+    font-style: normal; /* the font style, can be bold itaclic etc */
+}

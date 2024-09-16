@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  <title>Student Feedback</title>
+ 
+  <!-- ADD OUR STYLES AFTER BOOTSTRAP -->
+   <!-- Boostrap will add it's styles and then CSS will add our styles -->
+        
+
+
+  <!-- bootstrap links below -->
+<!-- bootstrap defines several styles for a variety
+of html elements
+- Each Bootstrap style selector is a class. 
+For example: ".btn" defines styles that set the
+shape, size, and click effect of a button or
+submit input
+- So if we added the class "btn" to one of our
+elements, it will get those styles -->
+
+
+<!-- googlefonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap" rel="stylesheet">
+
+
+<!-- Boostrap html link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- Link for HTML to CSS - everything on css sheet happens after bootstrap -->
+<link href="feedback-style.css" type="text/css" rel="stylesheet">
+
+</head>
+<!-- to improve spacing between items on page:class=m-3  -->
+<body class="m3">
+
+    <div class="feedback bg-success-subtle">
+        <h1>Student Feedback</h1>
+    </div>
+<!-- Give each input an id attribute
+and a name attribute
+Use labels for each of your inputs
+Make sure radio buttons toggle correctly
+Make sure you see error message when form is submitted,
+if textarea is empty -->
+
+<!-- class= with bootstrap background color makes background blue for text below -->
+<!-- bg-info is background color, m-3 is margin, p-4 is padding -->
+<!-- add rounded for rounded corners -->
+    <div class="bg-info m-4 p-5 rounded-3 text-center">
+<!-- py sets padding only at the top and bottom -->
+        <h1 class="provide-feedback">Please provide feedback. You may do so anonymously.</h1>
+    </div>
+
+    <div class="row">
+        <!-- instructions -->
+         <!-- <div class="col-md-6"> puts instructions on top of form not next to text boxes 
+            when page is made more narrow (responsive design) -->
+          <!-- md-6 means when page is medium or smaller, columns stack
+           could do sm-6 so page needs to be very small for stacking -->
+        <!-- the number after md is column size, columns can be different
+         sizes - bootstrap goes up to 12 -->
+        <div class="col-md-6"> 
+            <h2>Instructions</h2>
+
+            <p>As one of our students, your thoughts, feedback, and comments are important.</p>
+            <p>Please send them using this form.</p>  
+            <p>If you would like us to follow up with you, include your contact information.</p>  
+        </div> <!--End of first instructions col div-->
+
+
+
+
+
+
+
+    <!-- get student name and email in text box -->
+        <!-- Need a text input for name email input -->
+        <!-- add class="form-control" to input, to get spacing for items on page -->
+        <!-- add class="form-lable" to label -->
+        <div class="col-md-5">
+        <form>
+            <p class="m-3">
+                <label class="form-label" for="student-name">Enter your name:</label>
+                <input class="form-control" type="text" id="student-name" name="student-name" required>
+            </p>
+            <!-- email below -->
+            <p class="m-3">
+                <label class="form-label" for="student-email">Enter your email:</label>
+                <input class="form-control" type="email" id="student-email" name="student-emai" required>
+            </p>
+
+
+            <!-- enter comments in large comment box -->
+            <!-- Need a textarea for comments -->
+            <p class="m-3">
+                <label class="form-label" for="comments">Comments?</label>
+                <br> 
+                <textarea class="form-control" id="comments" name="comments" rows="4" cols="50" required></textarea>
+            </p>
+            <br>
+
+            <!-- Yes No radio buttons with Submit button below -->
+            <!-- on line 28 "checked" so yes is checked when page loads -->
+            <!-- Surround radio buttons with div and add class -->
+            <!-- <p class=m-4 for a margin -->
+            <!-- can also do mx-2 for margin for <p> -->
+            <p class="m-3">Are you a current student?</p>
+
+            <!-- include the div and add form-check, form-check-input
+            form-check-label from bootstrap -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="yes" name="student-status" value="yes" checked>
+                <label class="form-check-label" for="yes">Yes</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="no" name="student-status" value="no">
+                <label class="form-check-label" for="no">No</label>
+            </div>
+
+
+            <br>
+            <br>
+        <!-- insert the submit button -->
+        <!-- Button and Submit input stlyes
+        - add class="btn"
+        - Doesn't look that different
+        - White with click effect.....
+        <div>
+            <input class="btn" type="submit">
+        </div> -->
+            <p class="m-3">
+                <!-- bootstrap submit btn -->
+                <!-- because added bootstrap code can now use
+                the bootstrap submit button
+                - Boostrap essentially created a css class 
+                "class" enables styling without adding
+                to the css page -->
+                <input class="btn btn-primary" type="submit">
+                <!-- regular html submit button -->
+                <input type="submit" value="Submit Feedback">
+            </p>
+        </form>
+        </div> <!---End of second form col div -->
+    
+    </div> <!--end of the row div that contains both cols-->
+
+
+
+
+</body>
+</html>

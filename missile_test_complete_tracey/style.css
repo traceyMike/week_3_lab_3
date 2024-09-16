@@ -1,0 +1,45 @@
+body {
+    background-color: violet;
+}
+
+
+
+
+
+#real-alert {
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    text-decoration: none; /* remove the underline*/
+    padding: 10px; /* adding padding for space */
+    width: 215px; 
+    height: 55px;
+    text-align: center; /* center text horizontally */
+    line-height: 25px; /* centers text vertically */
+    border: 2px solid darkgreen; /* add a border - don't forget the solid */
+    box-sizing: border-box; /* makes padding and border included in width and height */
+    border-radius: 8px; /* rounded corners */
+}
+
+/* style test-only elements */
+#test-only {
+    background-color: red;
+    color: whitesmoke;
+    font-size: 15px;
+    text-decoration: none; /* remove the underline*/
+    padding: 10px; /* adding padding for space */
+    width: 215px; 
+    height: 55px;
+    text-align: center; /* center text horizontally */
+    line-height: 25px; /* centers text vertically */
+    border: 2px solid darkred; /* add a border */
+    box-sizing: border-box; /* makes padding and border included in width and height */
+    border-radius: 8px; /* rounded corners */
+}
+
+.missile-link {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
